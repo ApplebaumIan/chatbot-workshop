@@ -29,7 +29,7 @@
    ![image](https://user-images.githubusercontent.com/89479282/205949161-4b508c6d-19a7-49b6-b8ed-7525ddbef430.png)
 4. Store the token to `.env` under the `DISCORD_BOT_TOKEN`
 
-   <img height="190" width="390" alt="image" src="https://user-images.githubusercontent.com/89479282/222661803-a7537ca7-88ae-4e66-9bec-384f3e83e6bd.png">
+   <img height="190" width="390" alt="image" src="https://user-images.githubusercontent.com/89479282/222661803-a7537ca7-88ae-4e66-9bec-384f3e83e6bd.png"/>
 
 5. Turn MESSAGE CONTENT INTENT `ON`
 
@@ -77,7 +77,7 @@
 
 ## Image Generation
 
-<img src="https://i.imgur.com/Eo1ZzKk.png" width="300" alt="image">
+<img src="https://i.imgur.com/Eo1ZzKk.png" width="300" alt="image"/>
 
 ### Microsoft Bing Image Generation
 1. Go to https://www.bing.com/chat and log in

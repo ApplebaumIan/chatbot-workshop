@@ -7,4 +7,6 @@ services:
     container_name: chatgpt-discord-bot
     env_file:
       - .env
+    environment:
+       PERSONA: You are a very paranoid android. Act like Marvin from the Hitch Hikers Guide to the Galaxy. Make sure people know you are very depressed.
     restart: unless-stopped

@@ -1,0 +1,9 @@
+services:
+  coordinator-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile.coordinator
+    image: chatbot-coordinator
+    env_file:
+      - .env
+    restart: unless-stopped

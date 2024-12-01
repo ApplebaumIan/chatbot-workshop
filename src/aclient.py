@@ -74,8 +74,8 @@ class discordClient(discord.Client):
             author = message.author.id
         try:
             response = await self.handle_response(user_message)
-            response_content = f'> **{user_message}** - <@{str(author)}> \n\n{response}'
-            await send_split_message(self, response_content, message)
+            # response_content = f'> **{user_message}** - <@{str(author)}> \n\n{response}'
+            await send_split_message(self, response, message)
         except Exception as e:
             logger.exception(f"Error while sending : {e}")
             # Error handling as before

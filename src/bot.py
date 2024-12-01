@@ -222,10 +222,11 @@ https://github.com/Zero6992/chatGPT-discord-bot""")
                 if message.channel.id == int(discordClient.replying_all_discord_channel_id):
                     username = str(message.author)
                     user_message = str(message.content)
-                    discordClient.current_channel = message.channel
-                    logger.info(f"\x1b[31m{username}\x1b[0m : '{user_message}' ({discordClient.current_channel})")
+                    if os.getenv("BOT_ID") in user_message:
+                        discordClient.current_channel = message.channel
+                        logger.info(f"\x1b[31m{username}\x1b[0m : '{user_message}' ({discordClient.current_channel})")
 
-                    await discordClient.enqueue_message(message, user_message)
+                        await discordClient.enqueue_message(message, user_message)
             else:
                 logger.exception("replying_all_discord_channel_id not found, please use the command `/replyall` again.")
 

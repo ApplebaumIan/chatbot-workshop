@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="mdx-wrapper mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">GPT Persona Bot Workshop | GPT Persona Bot Workshop</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://ApplebaumIan.github.io/chatbot-workshop/proposal"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="GPT Persona Bot Workshop | GPT Persona Bot Workshop"><meta data-rh="true" name="description" content="Contributors"><meta data-rh="true" property="og:description" content="Contributors"><link data-rh="true" rel="icon" href="/chatbot-workshop/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://ApplebaumIan.github.io/chatbot-workshop/proposal"><link data-rh="true" rel="alternate" href="https://ApplebaumIan.github.io/chatbot-workshop/proposal" hreflang="en"><link data-rh="true" rel="alternate" href="https://ApplebaumIan.github.io/chatbot-workshop/proposal" hreflang="x-default"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://temple-cis-projects-in-cs.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/azc3hx/b/8/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=50af7ec2"></script>
+<script src="https://temple-cis-projects-in-cs.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/azc3hx/b/8/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=160e88a6"></script><link rel="stylesheet" href="/chatbot-workshop/assets/css/styles.c1378d4a.css">
+<script src="/chatbot-workshop/assets/js/runtime~main.cf1807c3.js" defer="defer"></script>
+<script src="/chatbot-workshop/assets/js/main.b9730905.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/chatbot-workshop/"><div class="navbar__logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Temple_T_logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Temple_T_logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">GPT Persona Bot Workshop</b></a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/ApplebaumIan/chatbot-workshop" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_j9I6"><div class="col col--8"><article><header><h1>GPT Persona Bot Workshop</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="contributors">Contributors<a href="#contributors" class="hash-link" aria-label="Direct link to Contributors" title="Direct link to Contributors">​</a></h2>
+<table><tr><td align="center"><a href="https://github.com/ApplebaumIan"><img src="https://avatars.githubusercontent.com/u/9451941?v=4" width="100;" alt="ApplebaumIan"><br><sub><b>Ian Tyler Applebaum</b></sub></a></td><td align="center"><a href="https://github.com/sethbern"><img src="https://avatars.githubusercontent.com/u/70603981?v=4" width="100;" alt="sethbern"><br><sub><b>Seth Bernstein</b></sub></a></td><td align="center"><a href="https://github.com/thanhnguyen46"><img src="https://avatars.githubusercontent.com/u/60533187?v=4" width="100;" alt="thanhnguyen46"><br><sub><b>Thanh Nguyen</b></sub></a></td><td align="center"><a href="https://github.com/mananpatelll"><img src="https://avatars.githubusercontent.com/u/144215944?v=4" width="100;" alt="thanhnguyen46"><br><sub><b>Manan Patel</b></sub></a></td></tr></table>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="learning-goals">Learning Goals:<a href="#learning-goals" class="hash-link" aria-label="Direct link to Learning Goals:" title="Direct link to Learning Goals:">​</a></h2>
+<ul>
+<li>Develop skills in crafting robust, effective prompts.</li>
+<li>Understand the challenges of building distraction-resistant AI systems.</li>
+<li>Gain hands-on experience in testing and iterating AI behavior under adversarial conditions.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="materials-and-setup">Materials and Setup:<a href="#materials-and-setup" class="hash-link" aria-label="Direct link to Materials and Setup:" title="Direct link to Materials and Setup:">​</a></h2>
+<ul>
+<li>Pre-configured GitHub repository for bot creation.</li>
+<li>Discord server with necessary permissions and channels.</li>
+<li>Docker setup guide or preloaded codespaces for an easy start.</li>
+<li>Example prompts and persona templates for inspiration.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview">Overview:<a href="#overview" class="hash-link" aria-label="Direct link to Overview:" title="Direct link to Overview:">​</a></h2>
+<p>Participants will design a chatbot that mimics a fictional character of their choosing, using prompt engineering to guide the bot in completing a specific task. However, a secret &quot;distractor&quot; will attempt to derail them. The goal is to teach participants how to craft resilient prompts and understand the importance of specificity in AI interactions.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="workshop-flowstructure">Workshop flow/Structure<a href="#workshop-flowstructure" class="hash-link" aria-label="Direct link to Workshop flow/Structure" title="Direct link to Workshop flow/Structure">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="introduction-10-minutes">Introduction (10 minutes)<a href="#introduction-10-minutes" class="hash-link" aria-label="Direct link to Introduction (10 minutes)" title="Direct link to Introduction (10 minutes)">​</a></h3>
+<ul>
+<li>Give overview</li>
+<li>Go over the goal: Create a chatbot that acts like you and completes a task.</li>
+<li>Go over the challenge: A secret distractor will try to get bots off task.</li>
+<li>Explain how prompt engineering ensures the bot stays focused despite distractions.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bot-creation-30-minutes">Bot Creation (30 minutes)<a href="#bot-creation-30-minutes" class="hash-link" aria-label="Direct link to Bot Creation (30 minutes)" title="Direct link to Bot Creation (30 minutes)">​</a></h3>
+<ul>
+<li>Task: Build a chatbot using the provided setup (Docker or GitHub Codespaces).</li>
+<li>Create the bot’s persona to reflect their own personality traits.</li>
+<li>Use the system prompt file to program the bot&#x27;s behavior.</li>
+<li>Provide an example persona</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="task-assignment-10-minutes">Task Assignment (10 minutes)<a href="#task-assignment-10-minutes" class="hash-link" aria-label="Direct link to Task Assignment (10 minutes)" title="Direct link to Task Assignment (10 minutes)">​</a></h3>
+<ul>
+<li>Reveal the group task (building a system, solving a riddle, working through a problem, etc..)</li>
+<li>Bots must collaborate to achieve the task autonomously, guided only by prompts</li>
+</ul>
+<p><del>### Distractor Role (Secretly Assigned)</del></p>
+<p><del>- One participant per group will secretly play the distractor.</del></p>
+<p><del>- Objective: Distract or mislead the bots by giving vague or off-topic inputs.</del></p>
+<p><del>- Stay subtle to avoid being caught too early.</del></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="bot-collaboration-and-testing-30-minutes">Bot Collaboration and Testing (30 minutes)<a href="#bot-collaboration-and-testing-30-minutes" class="hash-link" aria-label="Direct link to Bot Collaboration and Testing (30 minutes)" title="Direct link to Bot Collaboration and Testing (30 minutes)">​</a></h3>
+<p>Start Task
+Observe how the bots respond to inputs
+Take note of some of the good or bad that is happening
+Discussion (20 minutes)
+Everybody shares who they think the distractor was and why.
+Distractor is revealed
+Discuss:
+What strategies worked to keep their bot focused?
+How did the distractor succeed or fail?
+The role of clear and specific prompts in guiding AI.
+The importance of anticipating edge cases or unexpected inputs.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="slides">Slides<a href="#slides" class="hash-link" aria-label="Direct link to Slides" title="Direct link to Slides">​</a></h2>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="chatbot-workshop-">Chatbot Workshop 💬<a href="#chatbot-workshop-" class="hash-link" aria-label="Direct link to Chatbot Workshop 💬" title="Direct link to Chatbot Workshop 💬">​</a></h3>
+<p>Building and Testing Resilient AI Systems</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="objectives">Objectives:<a href="#objectives" class="hash-link" aria-label="Direct link to Objectives:" title="Direct link to Objectives:">​</a></h3>
+<ul>
+<li>Understand prompt engineering’s role in chatbot behavior.</li>
+<li>Set up and customize an AI chatbot in Discord.</li>
+<li>Build adversarial resilience through iterative refinement.</li>
+<li>Collaborate to evaluate and improve chatbot effectiveness.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="introduce-workshop">Introduce Workshop<a href="#introduce-workshop" class="hash-link" aria-label="Direct link to Introduce Workshop" title="Direct link to Introduce Workshop">​</a></h3>
+<p>Follow along and install our repo here!
+<a href="https://applebaumian.github.io/chatbot-workshop/" target="_blank" rel="noopener noreferrer">https://applebaumian.github.io/chatbot-workshop/</a></p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lets-setup-your-chatbot-">Let’s setup your chatbot! 🤖<a href="#lets-setup-your-chatbot-" class="hash-link" aria-label="Direct link to Let’s setup your chatbot! 🤖" title="Direct link to Let’s setup your chatbot! 🤖">​</a></h3>
+<p>This file controls your bot’s “Persona”.</p>
+<ul>
+<li>Change the prompt!</li>
+<li>Make sure GPT is listening.</li>
+<li>Break the bot!</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-is-prompt-engineering">What is Prompt Engineering?<a href="#what-is-prompt-engineering" class="hash-link" aria-label="Direct link to What is Prompt Engineering?" title="Direct link to What is Prompt Engineering?">​</a></h3>
+<p>Crafting input prompts to guide AI behavior.
+Key principles:</p>
+<ul>
+<li>Clarity and specificity.</li>
+<li>Examples.</li>
+<li>Constraints and guardrails.</li>
+<li>Tone and context.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why">Why?<a href="#why" class="hash-link" aria-label="Direct link to Why?" title="Direct link to Why?">​</a></h3>
+<p>AI struggles with ambiguity, adversarial inputs, and staying on-task in dynamic contexts.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="5-prompt-engineering-techniques">5 Prompt Engineering Techniques:<a href="#5-prompt-engineering-techniques" class="hash-link" aria-label="Direct link to 5 Prompt Engineering Techniques:" title="Direct link to 5 Prompt Engineering Techniques:">​</a></h3>
+<ul>
+<li>Instruction clarity.</li>
+<li>Ask GPT for better prompts.</li>
+<li>Example-driven prompts.</li>
+<li>Constraints.</li>
+<li>Role Assignment</li>
+<li>Iterative Refinement</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technique-1-instruction-clarity">Technique 1: Instruction Clarity<a href="#technique-1-instruction-clarity" class="hash-link" aria-label="Direct link to Technique 1: Instruction Clarity" title="Direct link to Technique 1: Instruction Clarity">​</a></h3>
+<ul>
+<li>Use direct and specific language to reduce ambiguity.</li>
+<li>Example: “Help me solve this math problem by explaining the steps to find the area of a triangle.” vs. “Help me solve this problem.”</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technique-2-example-driven-prompts">Technique 2: Example-Driven Prompts<a href="#technique-2-example-driven-prompts" class="hash-link" aria-label="Direct link to Technique 2: Example-Driven Prompts" title="Direct link to Technique 2: Example-Driven Prompts">​</a></h3>
+<ul>
+<li>Prompts set clear expectations for response structure and style.</li>
+<li>Example: “Generate a joke in the format: [Setup] - [Punchline]. Here’s an example: Why don’t skeletons fight each other? - They don’t have the guts.”</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technique-3-constraints">Technique 3: Constraints<a href="#technique-3-constraints" class="hash-link" aria-label="Direct link to Technique 3: Constraints" title="Direct link to Technique 3: Constraints">​</a></h3>
+<ul>
+<li>Set boundaries for what the bot can or cannot do.</li>
+<li>Example: “Generate a response in less than 50 words, avoiding technical jargon.”</li>
+<li>Tip: Constraints focus the bot’s behavior and ensure relevance.</li>
+<li>Example: “Explain recursion.” → “Explain recursion in 30 words or fewer for a beginner.”</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technique-4-role-assignment">Technique 4: Role Assignment<a href="#technique-4-role-assignment" class="hash-link" aria-label="Direct link to Technique 4: Role Assignment" title="Direct link to Technique 4: Role Assignment">​</a></h3>
+<ul>
+<li>Persona influences tone and response style.</li>
+<li>Example: “You are a friendly teacher. Explain the Fibonacci sequence to a 10-year-old.”</li>
+<li>Tip: Use role assignment to simulate expertise or adjust the tone for your task.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="technique-5-iterative-refinement">Technique 5: Iterative Refinement<a href="#technique-5-iterative-refinement" class="hash-link" aria-label="Direct link to Technique 5: Iterative Refinement" title="Direct link to Technique 5: Iterative Refinement">​</a></h3>
+<ul>
+<li>Test prompts iteratively to identify gaps or ambiguities.</li>
+<li>Example: Initial prompt: “Explain recursion.”</li>
+<li>Refined prompt: “Explain recursion as if I’m a beginner. Use a simple analogy, and limit your response to 50 words.”</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lets-use-these-techniques-on-our-bots">Let’s use these techniques on our bots!<a href="#lets-use-these-techniques-on-our-bots" class="hash-link" aria-label="Direct link to Let’s use these techniques on our bots!" title="Direct link to Let’s use these techniques on our bots!">​</a></h3>
+<hr></article></div><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#contributors" class="table-of-contents__link toc-highlight">Contributors</a></li><li><a href="#learning-goals" class="table-of-contents__link toc-highlight">Learning Goals:</a></li><li><a href="#materials-and-setup" class="table-of-contents__link toc-highlight">Materials and Setup:</a></li><li><a href="#overview" class="table-of-contents__link toc-highlight">Overview:</a></li><li><a href="#workshop-flowstructure" class="table-of-contents__link toc-highlight">Workshop flow/Structure</a><ul><li><a href="#introduction-10-minutes" class="table-of-contents__link toc-highlight">Introduction (10 minutes)</a></li><li><a href="#bot-creation-30-minutes" class="table-of-contents__link toc-highlight">Bot Creation (30 minutes)</a></li><li><a href="#task-assignment-10-minutes" class="table-of-contents__link toc-highlight">Task Assignment (10 minutes)</a></li><li><a href="#bot-collaboration-and-testing-30-minutes" class="table-of-contents__link toc-highlight">Bot Collaboration and Testing (30 minutes)</a></li></ul></li><li><a href="#slides" class="table-of-contents__link toc-highlight">Slides</a><ul><li><a href="#chatbot-workshop-" class="table-of-contents__link toc-highlight">Chatbot Workshop 💬</a></li><li><a href="#objectives" class="table-of-contents__link toc-highlight">Objectives:</a></li><li><a href="#introduce-workshop" class="table-of-contents__link toc-highlight">Introduce Workshop</a></li><li><a href="#lets-setup-your-chatbot-" class="table-of-contents__link toc-highlight">Let’s setup your chatbot! 🤖</a></li><li><a href="#what-is-prompt-engineering" class="table-of-contents__link toc-highlight">What is Prompt Engineering?</a></li><li><a href="#why" class="table-of-contents__link toc-highlight">Why?</a></li><li><a href="#5-prompt-engineering-techniques" class="table-of-contents__link toc-highlight">5 Prompt Engineering Techniques:</a></li><li><a href="#technique-1-instruction-clarity" class="table-of-contents__link toc-highlight">Technique 1: Instruction Clarity</a></li><li><a href="#technique-2-example-driven-prompts" class="table-of-contents__link toc-highlight">Technique 2: Example-Driven Prompts</a></li><li><a href="#technique-3-constraints" class="table-of-contents__link toc-highlight">Technique 3: Constraints</a></li><li><a href="#technique-4-role-assignment" class="table-of-contents__link toc-highlight">Technique 4: Role Assignment</a></li><li><a href="#technique-5-iterative-refinement" class="table-of-contents__link toc-highlight">Technique 5: Iterative Refinement</a></li><li><a href="#lets-use-these-techniques-on-our-bots" class="table-of-contents__link toc-highlight">Let’s use these techniques on our bots!</a></li></ul></li></ul></div></div></div></main></div><footer class="footer"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/ApplebaumIan/chatbot-workshop" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="margin-bottom--sm"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Temple_T_logo.svg" alt="My Site Logo" class="footer__logo themedComponent_mlkZ themedComponent--light_NVdE"><img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Temple_T_logo.svg" alt="My Site Logo" class="footer__logo themedComponent_mlkZ themedComponent--dark_xIcU"></div><div class="footer__copyright">Copyright © 2024 GPT Persona Bot Workshop, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

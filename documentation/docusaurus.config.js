@@ -135,15 +135,15 @@ const config = {
           src: logo,
         },
         links: [
-          {
-            title: 'Workshop',
-            items: [
-              {
-                label: 'Workshop',
-                to: '/workshop/intro',
-              },
-            ],
-          },
+          //{
+          //  title: 'Workshop',
+          //  items: [
+          //    {
+          //      label: 'Workshop',
+          //      to: '/workshop/intro',
+          //    },
+          //  ],
+          //},
           // {
           //   title: 'Community',
           //   items: [

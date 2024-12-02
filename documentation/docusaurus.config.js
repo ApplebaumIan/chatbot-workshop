@@ -111,17 +111,17 @@ const config = {
           src: logo,
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Workshop',
-          },{
-            to: '/tutorial/Intro',
-            label: 'Docusaurus Tutorial',
-            position: 'left',
-            activeBaseRegex: `/tutorial/`,
-          },
+          //{
+          //  type: 'doc',
+          //  docId: 'intro',
+          //  position: 'left',
+          //  label: 'Workshop',
+          //},{
+          //  to: '/tutorial/Intro',
+          //  label: 'Docusaurus Tutorial',
+          //  position: 'left',
+          //  activeBaseRegex: `/tutorial/`,
+          //},
           {
             href: 'https://github.com/'+process.env.ORG_NAME+'/'+process.env.PROJECT_NAME,
             label: 'GitHub',

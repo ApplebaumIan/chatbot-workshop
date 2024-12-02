@@ -19,5 +19,7 @@
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px;
 }

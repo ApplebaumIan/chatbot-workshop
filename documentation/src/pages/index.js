@@ -16,11 +16,9 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
             {/* TODO: Change me to your project's tutorial*/ }
-          <Link
-            className="button button--secondary button--lg"
-            to="/tutorial/intro">
-            Begin Workshop - 15min ⏱️
-          </Link>
+            <button className="button button--secondary button--lg" disabled>
+              Begin Workshop - 15min ⏱️
+            </button>
         </div>
       </div>
     </header>

@@ -1,3 +1,12 @@
+# What is Prompt Engineering?
+- Slides will be added soon!
+<!-- <Figure caption={"What is Prompt Engineering?"} subcaption={
+    <a href={"/slides-html/#0"} target={"_blank"} rel="noopener noreferrer">full screen click here</a>
+}>
+    <iframe height={"500"} width={"100%"} src="/slides-html/#0" title="W3Schools Free Online Web Tutorials"></iframe>
+</Figure> -->
+
+
 # ChatGPT Discord Bot
 
 > ### Build your own Discord bot using ChatGPT

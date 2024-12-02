@@ -1,4 +1,38 @@
 # GPT Persona Bot Workshop
+
+## Contributors
+
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/ApplebaumIan">
+            <img src="https://avatars.githubusercontent.com/u/9451941?v=4" width="100;" alt="ApplebaumIan"/>
+            <br />
+            <sub><b>Ian Tyler Applebaum</b></sub>
+        </a>
+    </td>
+<td align="center">
+        <a href="https://github.com/sethbern">
+            <img src="https://avatars.githubusercontent.com/u/70603981?v=4" width="100;" alt="sethbern"/>
+            <br />
+            <sub><b>Seth Bernstein</b></sub>
+        </a>
+    </td>
+<td align="center">
+        <a href="https://github.com/thanhnguyen46">
+            <img src="https://avatars.githubusercontent.com/u/60533187?v=4" width="100;" alt="thanhnguyen46"/>
+            <br />
+            <sub><b>Thanh Nguyen</b></sub>
+        </a>
+    </td><td align="center">
+        <a href="https://github.com/mananpatelll">
+            <img src="https://avatars.githubusercontent.com/u/144215944?v=4" width="100;" alt="thanhnguyen46"/>
+            <br />
+            <sub><b>Manan Patel</b></sub>
+        </a>
+    </td></tr>
+</table>
+
 ## Learning Goals:
 - Develop skills in crafting robust, effective prompts.
 - Understand the challenges of building distraction-resistant AI systems.
@@ -149,3 +183,4 @@ AI struggles with ambiguity, adversarial inputs, and staying on-task in dynamic 
 ### Let’s use these techniques on our bots!
 
 ---
+

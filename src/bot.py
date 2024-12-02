@@ -5,8 +5,8 @@ from src.log import logger
 
 from g4f.client import Client
 from g4f.Provider import (RetryProvider, FreeGpt, ChatgptNext, AItianhuSpace,
-                        You, OpenaiChat, FreeChatgpt, Liaobots,
-                        Gemini, Bing)
+                          You, OpenaiChat, FreeChatgpt, Liaobots,
+                          Gemini, Bing)
 
 from src.aclient import discordClient
 from discord import app_commands
@@ -16,12 +16,19 @@ from src import log, art, personas
 def run_discord_bot():
     @discordClient.event
     async def on_ready():
-        await discordClient.send_start_prompt()
+        try:
+            personas.current_persona = "user-generated"
+
+            await discordClient.switch_persona(personas.current_persona)
+            logger.info(
+                f"Applied persona '{personas.current_persona}' on startup.")
+        except Exception as e:
+            logger.error(f"Failed to apply persona on startup: {e}")
+       # await discordClient.send_start_prompt()
         await discordClient.tree.sync()
         loop = asyncio.get_event_loop()
         loop.create_task(discordClient.process_messages())
         logger.info(f'{discordClient.user} is now running!')
-
 
     @discordClient.tree.command(name="chat", description="Have a chat with ChatGPT")
     async def chat(interaction: discord.Interaction, *, message: str):
@@ -29,7 +36,8 @@ def run_discord_bot():
             await interaction.response.defer(ephemeral=False)
             await interaction.followup.send(
                 "> **WARN: You already on replyAll mode. If you want to use the Slash Command, switch to normal mode by using `/replyall` again**")
-            logger.warning("\x1b[31mYou already on replyAll mode, can't use slash command!\x1b[0m")
+            logger.warning(
+                "\x1b[31mYou already on replyAll mode, can't use slash command!\x1b[0m")
             return
         if interaction.user == discordClient.user:
             return
@@ -39,7 +47,6 @@ def run_discord_bot():
             f"\x1b[31m{username}\x1b[0m : /chat [{message}] in ({discordClient.current_channel})")
 
         await discordClient.enqueue_message(interaction, message)
-
 
     @discordClient.tree.command(name="private", description="Toggle private access")
     async def private(interaction: discord.Interaction):
@@ -54,7 +61,6 @@ def run_discord_bot():
             await interaction.followup.send(
                 "> **WARN: You already on private mode. If you want to switch to public mode, use `/public`**")
 
-
     @discordClient.tree.command(name="public", description="Toggle public access")
     async def public(interaction: discord.Interaction):
         await interaction.response.defer(ephemeral=False)
@@ -68,10 +74,10 @@ def run_discord_bot():
                 "> **WARN: You already on public mode. If you want to switch to private mode, use `/private`**")
             logger.info("You already on public mode!")
 
-
     @discordClient.tree.command(name="replyall", description="Toggle replyAll access")
     async def replyall(interaction: discord.Interaction):
-        discordClient.replying_all_discord_channel_id = str(interaction.channel_id)
+        discordClient.replying_all_discord_channel_id = str(
+            interaction.channel_id)
         await interaction.response.defer(ephemeral=False)
         if discordClient.is_replying_all == "True":
             discordClient.is_replying_all = "False"
@@ -84,7 +90,6 @@ def run_discord_bot():
                 "> **INFO: Next, the bot will disable Slash Command and responding to all message in this channel only. If you want to switch back to normal mode, use `/replyAll` again**")
             logger.warning("\x1b[31mSwitch to replyAll mode\x1b[0m")
 
-
     @discordClient.tree.command(name="chat-model", description="Switch the chat model between 'gemini' and 'gpt-4'")
     @app_commands.choices(model=[
         app_commands.Choice(name="gemini", value="gemini"),
@@ -96,15 +101,18 @@ def run_discord_bot():
         try:
             if model.value == "gemini":
                 discordClient.reset_conversation_history()
-                discordClient.chatBot = Client(provider=RetryProvider([Gemini, FreeChatgpt], shuffle=False))
+                discordClient.chatBot = Client(provider=RetryProvider(
+                    [Gemini, FreeChatgpt], shuffle=False))
                 discordClient.chatModel = model.value
             elif model.value == "gpt-4":
                 discordClient.reset_conversation_history()
-                discordClient.chatBot = Client(provider=RetryProvider([Liaobots, You, OpenaiChat, Bing], shuffle=False))
+                discordClient.chatBot = Client(provider=RetryProvider(
+                    [Liaobots, You, OpenaiChat, Bing], shuffle=False))
                 discordClient.chatModel = model.value
             elif model.value == "gpt-3.5-turbo":
                 discordClient.reset_conversation_history()
-                discordClient.chatBot = Client(provider=RetryProvider([FreeGpt, ChatgptNext, AItianhuSpace], shuffle=False))
+                discordClient.chatBot = Client(provider=RetryProvider(
+                    [FreeGpt, ChatgptNext, AItianhuSpace], shuffle=False))
                 discordClient.chatModel = model.value
 
             await interaction.followup.send(f"> **INFO: Chat model switched to {model.name}.**")
@@ -122,7 +130,6 @@ def run_discord_bot():
         personas.current_persona = "standard"
         logger.warning(
             f"\x1b[31m{discordClient.chatModel} bot has been successfully reset\x1b[0m")
-
 
     @discordClient.tree.command(name="help", description="Show help for the bot")
     async def help(interaction: discord.Interaction):
@@ -147,7 +154,6 @@ https://github.com/Zero6992/chatGPT-discord-bot""")
 
         logger.info(
             "\x1b[31mSomeone needs help!\x1b[0m")
-
 
     @discordClient.tree.command(name="draw", description="Generate an image with the Dall-e-3 model")
     @app_commands.choices(model=[
@@ -201,7 +207,7 @@ https://github.com/Zero6992/chatGPT-discord-bot""")
                 await discordClient.switch_persona(persona)
                 personas.current_persona = persona
                 await interaction.followup.send(
-                f"> **INFO: Switched to `{persona}` persona**")
+                    f"> **INFO: Switched to `{persona}` persona**")
             except Exception as e:
                 await interaction.followup.send(
                     "> ERROR: Something went wrong, try again later! ")
@@ -211,7 +217,6 @@ https://github.com/Zero6992/chatGPT-discord-bot""")
                 f"> **ERROR: No available persona: `{persona}` 😿**")
             logger.info(
                 f'{username} requested an unavailable persona: `{persona}`')
-
 
     @discordClient.event
     async def on_message(message):
@@ -224,11 +229,13 @@ https://github.com/Zero6992/chatGPT-discord-bot""")
                     user_message = str(message.content)
                     if os.getenv("BOT_ID") in user_message:
                         discordClient.current_channel = message.channel
-                        logger.info(f"\x1b[31m{username}\x1b[0m : '{user_message}' ({discordClient.current_channel})")
+                        logger.info(
+                            f"\x1b[31m{username}\x1b[0m : '{user_message}' ({discordClient.current_channel})")
 
                         await discordClient.enqueue_message(message, user_message)
             else:
-                logger.exception("replying_all_discord_channel_id not found, please use the command `/replyall` again.")
+                logger.exception(
+                    "replying_all_discord_channel_id not found, please use the command `/replyall` again.")
 
     TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 

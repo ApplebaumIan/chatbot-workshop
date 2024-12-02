@@ -111,19 +111,19 @@ const config = {
           src: logo,
         },
         items: [
+          //{
+          //  type: 'doc',
+          //  docId: 'intro',
+          //  position: 'left',
+          //  label: 'Workshop',
+          //},{
+          //  to: '/tutorial/Intro',
+          //  label: 'Docusaurus Tutorial',
+          //  position: 'left',
+          //  activeBaseRegex: `/tutorial/`,
+          //},
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Workshop',
-          },{
-            to: '/tutorial/Intro',
-            label: 'Docusaurus Tutorial',
-            position: 'left',
-            activeBaseRegex: `/tutorial/`,
-          },
-          {
-            href: 'https://github.com/'+process.env.ORG_NAME+'/'+process.env.PROJECT_NAME,
+            href: 'https://github.com/ApplebaumIan/chatbot-workshop',
             label: 'GitHub',
             position: 'right',
           },
@@ -135,15 +135,15 @@ const config = {
           src: logo,
         },
         links: [
-          {
-            title: 'Workshop',
-            items: [
-              {
-                label: 'Workshop',
-                to: '/workshop/intro',
-              },
-            ],
-          },
+          //{
+          //  title: 'Workshop',
+          //  items: [
+          //    {
+          //      label: 'Workshop',
+          //      to: '/workshop/intro',
+          //    },
+          //  ],
+          //},
           // {
           //   title: 'Community',
           //   items: [
@@ -166,7 +166,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/'+process.env.ORG_NAME+'/'+process.env.PROJECT_NAME,
+                href: 'https://github.com/ApplebaumIan/chatbot-workshop',
               },
             ],
           },

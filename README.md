@@ -1,3 +1,12 @@
+# What is Prompt Engineering?
+- Slides will be added soon!
+<!-- <Figure caption={"What is Prompt Engineering?"} subcaption={
+    <a href={"/slides-html/#0"} target={"_blank"} rel="noopener noreferrer">full screen click here</a>
+}>
+    <iframe height={"500"} width={"100%"} src="/slides-html/#0" title="W3Schools Free Online Web Tutorials"></iframe>
+</Figure> -->
+
+
 # ChatGPT Discord Bot
 
 > ### Build your own Discord bot using ChatGPT
@@ -60,9 +69,22 @@
    * `docker ps` to see the list of running services
    * `docker stop <BOT CONTAINER ID>` to stop the running bot
 
+---
+## Step 3: Join Discord to interact with the bot
+
+Click this [link](https://discord.gg/example-invite-link) to join the Discord server and interact with the bot
+
+Or, scan the QR code below with your mobile device to join:
+
+![Discord QR Code](./documentation/static/img/qr.png)
+
 ### Have a good chat!
 ---
+## Open in GitHub Codespaces
 
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?repo=ApplebaumIan/chatbot-workshop)
+
+---
 ## Optional: Configuring OpenAI API
 
 

@@ -69,6 +69,15 @@
    * `docker ps` to see the list of running services
    * `docker stop <BOT CONTAINER ID>` to stop the running bot
 
+---
+## Step 3: Join Discord to interact with the bot
+
+Click this [link](https://discord.gg/example-invite-link) to join the Discord server and interact with the bot
+
+Or, scan the QR code below with your mobile device to join:
+
+![Discord QR Code](./documentation/static/img/qr.png)
+
 ### Have a good chat!
 ---
 

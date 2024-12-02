@@ -123,7 +123,7 @@ const config = {
           //  activeBaseRegex: `/tutorial/`,
           //},
           {
-            href: 'https://github.com/'+process.env.ORG_NAME+'/'+process.env.PROJECT_NAME,
+            href: 'https://github.com/ApplebaumIan/chatbot-workshop',
             label: 'GitHub',
             position: 'right',
           },
@@ -166,7 +166,7 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/'+process.env.ORG_NAME+'/'+process.env.PROJECT_NAME,
+                href: 'https://github.com/ApplebaumIan/chatbot-workshop',
               },
             ],
           },

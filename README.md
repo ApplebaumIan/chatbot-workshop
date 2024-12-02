@@ -80,7 +80,11 @@ Or, scan the QR code below with your mobile device to join:
 
 ### Have a good chat!
 ---
+## Open in GitHub Codespaces
 
+[![Open in GitHub Codespaces](https://img.shields.io/badge/Open%20in-GitHub%20Codespaces-blue?logo=github&style=for-the-badge)](https://github.com/codespaces/new?repo=ApplebaumIan/chatbot-workshop)
+
+---
 ## Optional: Configuring OpenAI API
 
 
